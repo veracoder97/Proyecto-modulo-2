@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Vera</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/presentation.css" />
+    <link rel="icon" href="/logos/logo_santiago_vera.svg" />
+  </head>
+  <body>
+    <div class="icon-container">
+      <img src="/logos/bxl-css3.svg" alt="css" class="floating-icon" />
+      <img src="/logos/bxl-javascript.svg" alt="js" class="floating-icon" />
+      <img src="/logos/bxl-python.svg" alt="py" class="floating-icon" />
+      <img src="/logos/bxl-vuejs.svg" alt="vue" class="floating-icon" />
+      <img src="/logos/bxs-devices.svg" alt="devices" class="floating-icon" />
+      <img src="/logos/bxl-android.svg" alt="devices" class="floating-icon" />
+      <img src="/logos/bxl-apple.svg" alt="devices" class="floating-icon" />
+      <img src="/logos/bxl-git.svg" alt="devices" class="floating-icon" />
+      <img src="/logos/bxl-github.svg" alt="devices" class="floating-icon" />
+      <img
+        src="/logos/bxl-javascript.svg"
+        alt="devices"
+        class="floating-icon"
+      />
+      <img src="/logos/bxl-php.svg" alt="devices" class="floating-icon" />
+      <img
+        src="/logos/bxl-postgresql.svg"
+        alt="devices"
+        class="floating-icon"
+      />
+    </div>
+    <div class="main-logo">
+      <img
+        src="/logos/logo_santiago_vera.svg"
+        alt="main logo"
+        onclick="location.href='index.html'"
+      />
+    </div>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="/html/presentation.html" class="navbar-link">Presentation</a></li>
+        <li class="navbar-item"><a href="/html/work-expiriences.html" class="navbar-link">Work Experience</a></li>
+        <li class="navbar-item"><a href="/html/projects.html" class="navbar-link">Projects</a></li>
+    </ul>
+    </nav>
+
+    <div class="presentation">
+      <section class="slide" id="slide1">
+        <h1>Welcome to My Presentation</h1>
+        <p> Im Santiago Vera Acosta</p>
+        <button onclick="nextSlide()">Next</button>
+      </section>
+      <section class="slide" id="slide2">
+        <h2>About Me</h2>
+        <p>I am a dedicated and detail-oriented professional with a strong background in QA testing and full-stack development.
+            My goal is to create efficient, reliable, and user-friendly software solutions</p>
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+      </section>
+      <section class="slide" id="slide3">
+        <h2>My Skills</h2>
+        <ul>
+          <li>Quality Assurance: Expertise in manual and automated testing to ensure software quality.</li>
+          <li>Full-Stack Development: Proficient in both front-end and back-end development, including HTML, CSS, JavaScript, and various backend technologies.</li>
+          <li>Agile Methodology: Experienced in agile development processes to enhance productivity and collaboration.</li>
+          <li>Jira: Skilled in using Jira for project management and tracking.</li>
+          <li>Git: Proficient in version control with Git.</li>
+          <li>Collaborative Work: Strong teamwork skills, working effectively in cross-functional teams.</li>
+          <li>Problem-Solving: Strong analytical skills to troubleshoot and optimize software performance.</li>
+        </ul>
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+      </section>
+    </div>
+    <footer>
+      <div class="reserve-rights">
+        <img src="/logos/meta.svg" alt="meta" />
+        <p>&copy; 2024 Santiago vera. All rights reserved.</p>
+        <img src="/logos/linkdin.svg" alt="linkdin" />
+      </div>
+    </footer>
+    <script src="/scripts/icon-nav.js"></script>
+    <script src="/scripts/presentation.js"></script>
+  </body>
+</html>

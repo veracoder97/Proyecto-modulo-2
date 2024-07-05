@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Vera</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="logos/logo_santiago_vera.svg">
+</head>
+<body>
+    <div class="icon-container">
+        <img src="/logos/bxl-css3.svg" alt="css" class="floating-icon">
+        <img src="/logos/bxl-javascript.svg" alt="js" class="floating-icon">
+        <img src="/logos/bxl-python.svg" alt="py" class="floating-icon">
+        <img src="/logos/bxl-vuejs.svg" alt="vue" class="floating-icon">
+        <img src="/logos/bxs-devices.svg" alt="devices" class="floating-icon">
+        <img src="/logos/bxl-android.svg" alt="devices" class="floating-icon">
+        <img src="/logos/bxl-apple.svg" alt="devices" class="floating-icon">
+        <img src="/logos/bxl-git.svg" alt="devices" class="floating-icon">
+        <img src="/logos/bxl-github.svg" alt="devices" class="floating-icon">
+        <img src="/logos/bxl-javascript.svg" alt="devices" class="floating-icon">
+        <img src="/logos/bxl-php.svg" alt="devices" class="floating-icon">
+        <img src="/logos/bxl-postgresql.svg" alt="devices" class="floating-icon">
+        
+    </div>
+    <div class="main-logo">
+        <img src="/logos/logo_santiago_vera.svg" alt="main logo" onclick="location.href='/html/index.html'">
+    </div>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="/html/presentation.html" class="navbar-link">Presentation</a></li>
+            <li class="navbar-item"><a href="/html/work-expiriences.html" class="navbar-link">Work Experience</a></li>
+            <li class="navbar-item"><a href="/html/projects.html" class="navbar-link">Projects</a></li>
+        </ul>
+    </nav>
+    <div class="main-presentation">
+        <h3>
+            Welcome to my professional portfolio.<br>  
+            Here, you'll find a comprehensive overview of my career, skills, and projects.
+            <br>
+            About Me
+            <br>
+            I am a dedicated and detail-oriented professional with a strong background
+            in QA testing and full-stack development.
+            <br> 
+            My goal is to create efficient, reliable, and user-friendly software solutions.</h3>
+    </div>
+    <div class="buttons-main">
+        <button class="button-project" onclick="location.href='projects.html'">See my proyects</button>
+        <button class="button-contact">contact me</button>
+    </div>
+       <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>let's work together</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+       </div>
+    <footer>
+       
+        <div class="reserve-rights">
+            <img src="/logos/meta.svg" alt="meta">
+            <p>&copy; 2024 Santiago vera. All rights reserved.</p>
+            <img src="/logos/linkdin.svg" alt="linkdin">
+        </div>
+        
+    </footer>  
+    <script src="/scripts/icon-nav.js"></script>
+    <script src="/scripts/modal-contact.js"></script>
+</body>
+</html>

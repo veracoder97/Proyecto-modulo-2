@@ -1,0 +1,219 @@
+:root{
+    --nav-color:#33333367;
+    --hover-color:#38ee274b;
+    --btn-shadow:#00000031;
+    --color-text:#f9fcf6f1;
+}
+body{
+    width:100%;
+    height:100%;
+    background-color: #53535259;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*estilo de los iconos flotantes*/
+.icon-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.floating-icon {
+    position: absolute;
+    width: 3rem; /* Ajusta el tamaño del ícono según sea necesario */
+    height: 3rem; /* Ajusta el tamaño del ícono según sea necesario */
+    animation: float 15s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/*logo principal*/
+.main-logo{
+    display: flex;
+    justify-content: space-around;
+    height: 16rem;
+    cursor: pointer;
+}
+/*nav-var principal*/
+.navbar {
+    background-color: #333333c4;
+    height: 4rem;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-link {
+    color: var(--color-text);
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+    color:var(--color-text); 
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 7px;
+    display: block;
+    margin-top: 5px;
+    bottom: -1; /* Posiciona la línea en la parte inferior del enlace */
+    background:var(--hover-color); /* Color de la línea */
+    transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/*contenido principal de la pagina*/
+.main-presentation{
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.main-presentation h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    font-weight:500;
+
+}
+/*estilo de los botones*/
+.buttons-main{
+    display: flex;
+    width: 100%;
+    margin-top: 4rem;
+    justify-content:space-evenly;
+}
+.buttons-main .button-project{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--btn-shadow) 3px 3px;
+    cursor: pointer;
+    background-color: #33333380;
+    transition: background-color 0.3s ease; 
+}
+
+
+.buttons-main .button-contact{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--btn-shadow) 3px 3px;
+    cursor: pointer;
+    background-color: #33333380;
+    transition: background-color 0.3s ease; 
+}
+.button-contact:hover, .button-project:hover {
+    background-color: #33bd3fa6; /* cambio de tono */
+}
+
+
+/*estilo de el modal de contacto*/
+.modal {
+    display: none; /* oculto por defecto */
+    position: fixed; /* estatico en un solo lugar*/
+    z-index: 1; /* situarse delante de el copntenido de la pagina*/
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: #24232383; /* Fallback color */
+    background-color: #00000075; /* opacidad de la pantalla de el fondo*/
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.911);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* estilo de el formulario de el modal de contacto*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: var(--nav-color);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #22222296;
+}
+
+/*estilo de el footer */
+footer{
+    width:100% ;
+    position: absolute;
+    background-color: #13161054;
+    bottom: 0;
+}
+
+.reserve-rights{
+    display:flex;
+    justify-content: center;
+
+}
